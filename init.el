@@ -77,15 +77,15 @@
 (load "init-auto-complete")
 (load "init-anything")
 
-(load "init-ocaml-mode")
-;; (load "init-mmm-mako")
-
 ;; progmodes
 (load "init-scheme")
 (load "init-c-mode")
 (load "init-elisp-mode")
 (load "init-python-mode")
 (load "init-scheme-mode")
+(load "init-ocaml-mode")
+
+(load "init-popwin")
 
 (cd "~")
 
