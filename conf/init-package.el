@@ -1,0 +1,5 @@
+(load "package")
+(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
+			 ("gnu" . "http://elpa.gnu.org/packages/")))
+(setq package-user-dir "~/.emacs.d/elisp")
+(package-initialize)

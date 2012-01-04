@@ -1,0 +1,10 @@
+(add-hook 'c-mode-common-hook
+	  '(lambda ()
+	     (setq indent-tabs-mode nil)
+	     (setq c-basic-offset 4)
+	     (show-paren-mode t)
+	     (setq tab-width 4)
+	     (setq tab-always-indent t)
+	     (gtags-mode 1)
+	     (hide-ifdef-mode)
+	     ))

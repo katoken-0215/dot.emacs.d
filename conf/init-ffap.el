@@ -1,0 +1,2 @@
+(require 'ffap)
+(ffap-bindings)

@@ -1,0 +1,5 @@
+(require 'auto-install)
+(setq auto-install-directory "~/.emacs.d/elisp/")
+(setq auto-install-save-confirm nil)
+(setq auto-install-use-wget t)
+(setq auto-install-wget-command "wget")

@@ -1,0 +1,1 @@
+(autoload 'linum-mode "linum" "LIne NUMber mode." t)

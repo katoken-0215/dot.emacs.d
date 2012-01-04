@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ndc_register_prop
+# --
+prop[$1].fPropName = SII_T("$2");
+prop[$1].fGetterProc = TestPlugin_NDCPropGetter_$2;
+prop[$1].fSetterProc = TestPlugin_NDCPropSetter_$2;
+prop[$1].fUserData = sii_reint_cast(sii_opaque, SII_T("id_$2"));
