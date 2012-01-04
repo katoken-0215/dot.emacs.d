@@ -3,4 +3,4 @@
 
 ;; Anythin
 (setq anything-samewindow nil)
-(push '("*anything*" :height 25) popwin:special-display-config)
+(push '("\\*anything.+\\*" :height 30 :regexp t) popwin:special-display-config)
