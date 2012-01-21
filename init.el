@@ -78,7 +78,6 @@
 (load "init-anything")
 
 ;; progmodes
-(load "init-scheme")
 (load "init-c-mode")
 (load "init-elisp-mode")
 (load "init-python-mode")
