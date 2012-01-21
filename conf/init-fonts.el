@@ -8,12 +8,9 @@
 
 (when (eq window-system 'w32)
   ;; IME変換時フォントの設定（テストバージョンのみ）
-  (setq w32-ime-font-face "MigMix 1M 8")
+  (setq w32-ime-font-face "MigMix 1M 10")
   (setq w32-ime-font-height 10)
-  (set-face-attribute 'default nil :family "Consolas" :height 80)
-  (setq w32-enable-synthesized-fonts t)
-  (setq default-frame-alist initial-frame-alist)
-  ;; ;; 標準フォントの設定
-  ;; (set-frame-font "MigMix 1M 8")
-  ;; (add-to-list 'default-frame-alist '(font . "MigMix 1M 8"))
+  (set-frame-font "Migu 1M 10")
+  (set-default-font "Migu 1M 10")
+  (add-to-list 'default-frame-alist '(font . "Migu 1M 10"))
   )
