@@ -84,6 +84,8 @@
 
 (load "init-popwin")
 
+(load "init-tabbar")
+
 (cd "~")
 
 (eshell)
