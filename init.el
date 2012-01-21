@@ -49,7 +49,6 @@
 
 (load "init-backup")
 (load "init-color-theme")
-(load "init-elscreen-mode")
 (load "init-fonts")
 
 (load "init-migemo")
