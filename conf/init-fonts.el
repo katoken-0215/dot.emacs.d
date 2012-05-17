@@ -1,10 +1,11 @@
+
 (when (and (eq window-system 'x) (>= emacs-major-version 23))
   (progn
-    (set-frame-font "Ume Gothic-8")
+    (set-frame-font "TakaoGothic-8")
     (set-fontset-font (frame-parameter nil 'font)
 		      'japanese-jisx0208
-		      '("Ume Gothic" . "unicode-bmp")))
-  (add-to-list 'default-frame-alist '(font . "Ume Gothic-8")))
+		      '("TakaoGothic" . "unicode-bmp")))
+  (add-to-list 'default-frame-alist '(font . "TakaoGothic-8")))
 
 (when (eq window-system 'w32)
   ;; IME変換時フォントの設定（テストバージョンのみ）
