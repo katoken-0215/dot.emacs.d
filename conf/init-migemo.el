@@ -4,8 +4,9 @@
   (setq migemo-dictionary (concat (getenv "INST_DIR")
 				  "\\app\\cmigemo\\dict\\utf-8\\migemo-dict")))
 (when (eq window-system 'x)
-)
-  
+  (setq migemo-command "/usr/bin/migemo")
+  (setq migemo-dictionary "/usr/share/migemo/migemo-dict"))
+
 (setq migemo-options '("-q" "--emacs"))
 (setq migemo-user-dictionary nil)
 (setq migemo-regex-dictionary nil)
