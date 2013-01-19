@@ -60,7 +60,6 @@
 (load "init-color-theme")
 (load "init-fonts")
 
-(load "init-migemo")
 (load "init-ffap")
 (load "init-recentf")
 (load "init-linum")
