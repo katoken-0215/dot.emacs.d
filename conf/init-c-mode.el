@@ -1,3 +1,4 @@
+(add-to-list 'auto-mode-alist '("\\.cl$" . c-mode))
 (add-hook 'c-mode-common-hook
 	  '(lambda ()
 	     (setq indent-tabs-mode nil)
