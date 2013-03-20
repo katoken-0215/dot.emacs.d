@@ -94,6 +94,8 @@
 
 (load "init-tabbar")
 
+(load "init-whitespace.el")
+
 (cd "~")
 
 (eshell)
