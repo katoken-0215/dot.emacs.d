@@ -63,7 +63,7 @@
 (load "init-ffap")
 (load "init-recentf")
 (load "init-linum")
-(load "init-crosshairs")
+(load "init-hl-line+")
 (load "init-uniquify")
 (load "init-develock")
 (load "init-org-mode")

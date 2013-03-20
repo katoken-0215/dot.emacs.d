@@ -1,5 +1,0 @@
-(require 'crosshairs)
-(crosshairs-toggle-when-idle t)
-(setq crosshairs-flash-col-timer 60000)
-(setq crosshairs-flash-line-timer 2)
-(global-set-key [(control ?+)] 'crosshairs)
