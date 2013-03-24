@@ -89,6 +89,7 @@
 (load "init-python-mode")
 (load "init-scheme-mode")
 (load "init-ocaml-mode")
+(load "init-scala-mode")
 
 (load "init-popwin")
 
