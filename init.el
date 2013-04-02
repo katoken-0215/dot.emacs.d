@@ -100,5 +100,3 @@
 
 (cd "~")
 
-(eshell)
-(insert "maximize-window")
