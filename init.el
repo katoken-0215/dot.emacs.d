@@ -90,6 +90,7 @@
 (load "init-scheme-mode")
 (load "init-ocaml-mode")
 (load "init-scala-mode")
+(load "init-markdown-mode")
 
 (load "init-popwin")
 
