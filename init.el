@@ -44,8 +44,7 @@
 (when (eq window-system 'w32)
   (setq w32-hide-mouse-on-key t)
   (setq w32-hide-mouse-timeout 5000)
-  (load "init-ime")
-  (load "init-cygwin-mount"))
+  (load "init-ime"))
 
 (when (eq window-system 'x)
   (prefer-coding-system 'utf-8-unix)
