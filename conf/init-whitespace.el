@@ -1,4 +1,4 @@
-(global-whitespace-mode t)
+(global-whitespace-mode 0)
 (setq whitespace-display-mappings
       ;; all numbers are Unicode codepoint in decimal. ⁖ (insert-char 182 1)
       '(
