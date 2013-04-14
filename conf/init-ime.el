@@ -13,3 +13,9 @@
 
   (setq w32-ime-buffer-switch-p nil)
   )
+
+(when (eq window-system 'x)
+  (require 'mozc)  ; or (load-file "/path/to/mozc.el")
+  (set-language-environment "Japanese")
+  (setq default-input-method "japanese-mozc")
+  (global-set-key [zenkaku-hankaku] 'mozc-mode))
