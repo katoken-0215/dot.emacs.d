@@ -6,3 +6,4 @@
 	(newline-mark 10 [182 10]) ; 10 LINE FEED
 	(tab-mark 9 [9655 9] [92 9]) ; 9 TAB, 9655 WHITE RIGHT-POINTING TRIANGLE 「▷」
 	))
+(setq whitespace-line-column 200)
