@@ -3,3 +3,7 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
+
+(add-hook 'gfm-mode-hook
+	  (lambda ()
+	    (whitespace-mode 0)))

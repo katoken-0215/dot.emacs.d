@@ -8,4 +8,5 @@
 	     (setq tab-always-indent t)
 	     (gtags-mode 1)
 	     (hide-ifdef-mode)
+	     (whitespace-mode 1)
 	     ))
