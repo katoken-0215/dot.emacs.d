@@ -3105,7 +3105,7 @@ Don't set it directly, use instead `anything-ff-auto-update-initial-value'.")
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (init . (lambda ()
               (setq anything-ff-auto-update-flag
                     anything-ff-auto-update-initial-value)))
@@ -4740,7 +4740,7 @@ Find inside `require' and `declare-function' sexp."
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . anything-find-files-get-candidates)
     (filtered-candidate-transformer anything-c-find-files-transformer)
     (persistent-action . anything-find-files-persistent-action)
@@ -4756,7 +4756,7 @@ Find inside `require' and `declare-function' sexp."
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . anything-find-files-get-candidates)
     (filtered-candidate-transformer anything-c-find-files-transformer)
     (persistent-action . anything-find-files-persistent-action)
@@ -4774,7 +4774,7 @@ Find inside `require' and `declare-function' sexp."
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . anything-find-files-get-candidates)
     (filtered-candidate-transformer anything-c-find-files-transformer)
     (persistent-action . anything-find-files-persistent-action)
@@ -4794,7 +4794,7 @@ Find inside `require' and `declare-function' sexp."
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . anything-find-files-get-candidates)
     (filtered-candidate-transformer anything-c-find-files-transformer)
     (persistent-action . anything-find-files-persistent-action)
@@ -4813,7 +4813,7 @@ Find inside `require' and `declare-function' sexp."
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . anything-find-files-get-candidates)
     (filtered-candidate-transformer anything-c-find-files-transformer)
     (persistent-action . anything-find-files-persistent-action)
@@ -4833,7 +4833,7 @@ Find inside `require' and `declare-function' sexp."
     (header-name . (lambda (name)
                      (concat name anything-c-find-files-doc-header)))
     ;; It is needed for filenames with capital letters
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . anything-find-files-get-candidates)
     (filtered-candidate-transformer anything-c-find-files-transformer)
     (persistent-action . anything-find-files-persistent-action)
@@ -5072,7 +5072,7 @@ Keys description:
            `(((name . ,(format "%s History" name))
               (header-name . (lambda (name)
                                (concat name anything-c-find-files-doc-header)))
-              (disable-shortcuts)
+              ;;(disable-shortcuts)
               (mode-line . anything-read-file-name-mode-line-string)
               (candidates . hist)
               (persistent-action . ,persistent-action)
@@ -5085,7 +5085,7 @@ Keys description:
                         (setq anything-ff-auto-update-flag
                               anything-ff-auto-update-initial-value)))
               ;; It is needed for filenames with capital letters
-              (disable-shortcuts)
+              ;;(disable-shortcuts)
               (mode-line . anything-read-file-name-mode-line-string)
               (candidates
                . (lambda ()
@@ -5876,7 +5876,7 @@ If a prefix arg is given run grep on all buffers ignoring non--file-buffers."
               (require 'recentf)
               (or recentf-mode (recentf-mode 1))))
     ;; Needed for filenames with capitals letters.
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (candidates . recentf-list)
     (keymap . ,anything-generic-files-map)
     (help-message . anything-generic-file-help-message)
@@ -6858,8 +6858,8 @@ Work both with standard Emacs bookmarks and bookmark-extensions.el."
 C-u \\[anything-execute-persistent-action]: Open URL with Firefox"))
   "Needs w3m and emacs-w3m.
 
-http://w3m.sourceforge.net/
-http://emacs-w3m.namazu.org/")
+w3m: http://w3m.sourceforge.net/
+emacs-w3m: http://emacs-w3m.namazu.org/")
 
 
 (defun anything-c-w3m-bookmarks-get-value (elm)
@@ -7285,8 +7285,8 @@ If FILE is nil return nil."
     (action . anything-semantic-default-action)
     "Needs semantic in CEDET.
 
-http://cedet.sourceforge.net/semantic.shtml
-http://cedet.sourceforge.net/"))
+semantic: http://cedet.sourceforge.net/semantic.shtml
+CEDET: http://cedet.sourceforge.net/"))
 
 
  
@@ -7856,8 +7856,8 @@ http://en.wikipedia.org/wiki/Ruby_Document_format")
 http://www.emacswiki.org/cgi-bin/wiki/download/el-expectations.el")
 
 (defvar anything-c-source-emacs-lisp-toplevels
-  '((name . "Emacs Lisp Toplevel / Level 4 Comment / Linkd Star")
-    (headline . "^(\\|(@\\*\\|^;;;;")
+  '((name . "Emacs Lisp Toplevel / Level 3 Comment / Linkd Star / interactive")
+    (headline . "^(\\|(@\\*\\|^;;;\\|(interactive\\b")
     (get-line . buffer-substring)
     (condition . (eq major-mode 'emacs-lisp-mode))
     (adjust))
@@ -8234,7 +8234,7 @@ http://bbdb.sourceforge.net/")
 
 (defvar anything-c-source-evaluation-result
   '((name . "Evaluation Result")
-    (disable-shortcuts)
+    ;;(disable-shortcuts)
     (dummy)
     (multiline)
     (mode-line . "C-RET: nl-and-indent, tab: reindent, C-tab:complete, C-p/n: next/prec-line.")
@@ -9062,7 +9062,7 @@ See also `anything-create--actions'.")
     (persistent-action . anything-c-persistent-xfont-action)
     (persistent-help . "Switch to this font temporarily")))
 
-;;; 𝕌𝕔𝕤 𝕊𝕪𝕞𝕓𝕠𝕝 𝕔𝕠𝕞𝕡𝕝𝕖𝕥𝕚𝕠𝕟
+;;; 𝕌𝕔𝕤 𝕊��������𝕓𝕠𝕝 𝕔𝕠𝕞�＄���𝕖�ヰ���𝕠𝕟
 ;;
 ;;
 (defvar anything-c-ucs-max-len 0)
@@ -10879,7 +10879,9 @@ It is added to `extended-command-history'.
     (if (stringp (symbol-function cmd))
         (execute-kbd-macro (symbol-function cmd))
         (setq this-command cmd)
-        (call-interactively cmd))))
+        (unwind-protect
+            (call-interactively cmd)
+          (run-with-timer 0.1 nil 'set 'last-repeatable-command cmd)))))
 
 ;;;###autoload
 (defun anything-c-set-variable (var)
@@ -11569,10 +11571,14 @@ with original attribute value.
 (put 'anything-c-arrange-type-attribute 'lisp-indent-function 1)
 
 (defun anything-compile-source--type-customize (source)
-  (anything-aif (assoc-default (assoc-default 'type source)
-                               anything-additional-type-attributes)
-      (append it source)
+  (anything-aif (assoc-default 'type source)
+      (append source
+              (assoc-default it anything-additional-type-attributes)
+              (assoc-default it anything-type-attributes)
+              nil)
     source))
+(setq anything-compile-source-functions
+      (delete 'anything-compile-source--type anything-compile-source-functions))
 (add-to-list 'anything-compile-source-functions
              'anything-compile-source--type-customize t)
 
@@ -11895,8 +11901,8 @@ Where db_path is a filename matched by
 
 Needs w3m and emacs-w3m.
 
-http://w3m.sourceforge.net/
-http://emacs-w3m.namazu.org/"
+w3m: http://w3m.sourceforge.net/
+emacs-w3m: http://emacs-w3m.namazu.org/"
   (interactive)
   (anything-other-buffer 'anything-c-source-w3m-bookmarks
                          "*anything w3m bookmarks*"))
