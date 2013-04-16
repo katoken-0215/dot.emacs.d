@@ -53,6 +53,7 @@
   (set-terminal-coding-system 'utf-8)
   (set-keyboard-coding-system 'utf-8)
   (set-clipboard-coding-system 'utf-8)
+  (load "init-ime")
   )
 
 (load "init-backup")
@@ -81,6 +82,8 @@
 (load "init-yasnippet")
 (load "init-auto-complete")
 (load "init-anything")
+
+(load "init-magit.el")
 
 ;; progmodes
 (load "init-c-mode")
