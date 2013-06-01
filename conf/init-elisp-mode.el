@@ -2,4 +2,5 @@
 	  '(lambda ()
 	     (show-paren-mode t)
 	     (whitespace-mode 1)
-	     ))
+	     (setq indent-tabs-mode nil)
+             ))
