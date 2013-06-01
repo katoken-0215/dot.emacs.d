@@ -3,4 +3,6 @@
 (add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
 (add-hook 'scala-mode-hook
 	  (lambda ()
+	    (setq indent-tabs-mode nil)
+	    (setq tab-width 2)
 	    (whitespace-mode 1)))
