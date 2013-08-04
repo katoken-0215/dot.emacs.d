@@ -2,3 +2,9 @@
 *~
 session.*
 *.dat
+*.swp
+
+# Ignore package.el related directories
+elisp/archives
+elisp/archive-contents
+elisp/builtin-packages
