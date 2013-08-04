@@ -1,4 +1,5 @@
-(load "~/.emacs.d/elisp/haskell-mode-13.7/haskell-mode.el")
+(add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode-13.7")
+(load-library "haskell-mode-autoloads")
 
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 
