@@ -94,6 +94,7 @@
 (load "init-scala-mode")
 (load "init-markdown-mode")
 (load "init-makefile")
+(load "init-haskell-mode")
 
 (load "init-popwin")
 
