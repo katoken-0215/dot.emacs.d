@@ -22,7 +22,7 @@
       ;; WM_SYSCOMMAND restore #xf120
       (w32-send-sys-command #xf120)
     (progn (set-frame-parameter nil 'width 82)
-	   (set-frame-parameter nil 'fullscreen 'fullheight))))
+           (set-frame-parameter nil 'fullscreen 'fullheight))))
 
 (set-language-environment "Japanese")
 (global-font-lock-mode t)
@@ -102,4 +102,3 @@
 (load "init-whitespace.el")
 
 (cd "~")
-
