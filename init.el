@@ -33,7 +33,6 @@
 (setq display-time-24hr-format t)
 (setq display-time-string-forms '(24-hours ":" minutes))
 (display-time)
-(transient-mark-mode nil)
 (setq gc-cons-threshold (* 20 gc-cons-threshold))
 (setq history-length 100)
 (setq tab-width 4)
