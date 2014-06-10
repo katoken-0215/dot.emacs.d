@@ -25,8 +25,3 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(cond
- ((< emacs-major-version 24)            ; older
-  (init-loader-load (expand-file-name "~/.emacs.d/conf/package/anything")))
- (t
-  (init-loader-load (expand-file-name "~/.emacs.d/conf/package/helm"))))

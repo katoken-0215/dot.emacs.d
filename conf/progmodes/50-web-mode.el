@@ -23,7 +23,5 @@
 ;; ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 ;; OTHER DEALINGS IN THE SOFTWARE.
 ;; 
-;; For more information, please refer to [http://unlicense.org]x
+;; For more information, please refer to [http://unlicense.org]
 
-(eval-after-load "package"
-  '(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))

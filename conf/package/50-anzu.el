@@ -25,7 +25,15 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'open-junk-file)
 
-;; No autoload cookie
-(require 'open-junk-file)
+
+(global-anzu-mode 1)
+
+(setq anzu-deactivate-region t)
+
+(global-set-key (kbd "M-%") 'anzu-query-replace)
+(global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
+
+(global-set-key (kbd "C-c r") 'anzu-query-replace)
+(global-set-key (kbd "C-c R") 'anzu-query-replace-regexp)
+(global-set-key (kbd "C-c s") 'anzu-query-replace-at-cursor-thing)

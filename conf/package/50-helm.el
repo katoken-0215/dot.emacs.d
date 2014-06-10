@@ -25,16 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'anything)
-
-(setq anything-ff-auto-update-initial-value nil)
-
-(global-set-key (kbd "C-x C-f") 'anything-find-files)
-(global-set-key (kbd "C-x b") 'anything-buffers-list)
-(global-set-key (kbd "M-y") 'anything-show-kill-ring)
-(global-set-key (kbd "M-x") 'anything-M-x)
-(global-set-key (kbd "C-c a") 'anything)
-
-(eval-after-load "popwin"
-  '(progn
-     (push '("^\*anything .+\*$" :height 25 :regexp t) popwin:special-display-config)))
+(init-loader-load (expand-file-name "~/.emacs.d/conf/package/helm"))

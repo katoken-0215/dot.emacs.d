@@ -25,14 +25,9 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(init-loader-load (expand-file-name "~/.emacs.d/conf/package/auto-complete"))
-
 (require 'auto-complete-config)
 
 (setq-default ac-sources '(ac-source-filename ac-source-words-in-same-mode-buffers))
-
-(require 'ac-dabbrev)
-(add-to-list 'ac-sources 'ac-source-dabbrev)
 
 (define-key ac-completing-map (kbd "C-n") 'ac-next)
 (define-key ac-completing-map (kbd "C-p") 'ac-previous)

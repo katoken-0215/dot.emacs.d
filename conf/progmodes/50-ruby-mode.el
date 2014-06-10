@@ -37,8 +37,6 @@
              (whitespace-mode 1)))
 
 ;;; ruby-block
-(package-require-package 'ruby-block)
-
 (eval-after-load "ruby-mode"
   '(progn
      ;; No autoload cookie
@@ -50,8 +48,6 @@
      (add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)))
 
 ;;; ruby-electric
-(package-require-package 'ruby-electric)
-
 ;;; auto-complete
 (eval-after-load "ac-dabbrev"
   '(add-hook 'ruby-mode-hook

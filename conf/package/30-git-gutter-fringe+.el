@@ -25,17 +25,12 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(init-loader-load (expand-file-name "~/.emacs.d/conf/package/auto-complete"))
+;; No autoload cookie
+(require 'git-gutter-fringe+)
 
-(require 'auto-complete-config)
+(global-git-gutter+-mode 1)
+(global-set-key (kbd "C-x G") 'global-git-gutter+-mode) ; Turn on/off globally
 
-(setq-default ac-sources '(ac-source-filename ac-source-words-in-same-mode-buffers))
-
-(require 'ac-dabbrev)
-(add-to-list 'ac-sources 'ac-source-dabbrev)
-
-(define-key ac-completing-map (kbd "C-n") 'ac-next)
-(define-key ac-completing-map (kbd "C-p") 'ac-previous)
-
-(setq ac-ignore-case nil)
-(setq ac-use-fuzzy t)
+;;; Act on hunks
+(define-key git-gutter+-mode-map (kbd "C-x v =") 'git-gutter+-show-hunk)
+(define-key git-gutter+-mode-map (kbd "C-x v u") 'git-gutter+-revert-hunks)

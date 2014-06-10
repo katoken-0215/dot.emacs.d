@@ -25,8 +25,6 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'markdown-mode)
-
 (autoload 'gfm-mode "markdown-mode"
   "Major mode for editing GFM files" t)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
@@ -34,4 +32,4 @@
 (add-hook 'gfm-mode-hook
           '(lambda ()
              (setq tab-width 2)
-             (whitespace-mode -1)))
+             (whitespace-mode 1)))

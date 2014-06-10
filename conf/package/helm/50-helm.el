@@ -25,44 +25,13 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'helm)
-
 (require 'helm-config)
 (require 'helm-files)
 
 (setq helm-ff-auto-update-initial-value nil)
-
-(defvar helm-find-files-other-frame-map
-  (let ((map (make-sparse-keymap)))
-    (set-keymap-parent map helm-find-files-map)
-    (define-key map (kbd "<RET>") 'helm-ff-run-switch-other-frame)
-    (delq nil map)))
-
-(defvar helm-find-files-other-window-map
-  (let ((map (make-sparse-keymap)))
-    (set-keymap-parent map helm-find-files-map)
-    (define-key map (kbd "<RET>") 'helm-ff-run-switch-other-window)
-    (delq nil map)))
-
-(defun helm-find-files-other-frame (&optional arg)
-  (interactive)
-  (let ((original-map helm-find-files-map))
-    (setq helm-find-files-map helm-find-files-other-frame-map)
-    (helm-find-files arg)
-    (setq helm-find-files-map original-map)))
-
-(defun helm-find-files-other-window (&optional arg)
-  (interactive)
-  (let ((original-map helm-find-files-map))
-    (setq helm-find-files-map helm-find-files-other-frame-map)
-    (helm-find-files arg)
-    (setq helm-find-files-map original-map)))
+(setq helm-ff-transformer-show-only-basename nil)
 
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x 5 f") 'helm-find-files-other-frame)
-(global-set-key (kbd "C-x 5 C-f") 'helm-find-files-other-frame)
-(global-set-key (kbd "C-x 4 f") 'helm-find-files-other-window)
-(global-set-key (kbd "C-x 4 C-f") 'helm-find-files-other-frame)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -71,4 +40,4 @@
 
 (eval-after-load "popwin"
   '(progn
-     (push '("^\*helm .+\*$" :height 25 :regexp t) popwin:special-display-config)))
+     (push '("^\*helm .+\*$" :height 30 :regexp t) popwin:special-display-config)))

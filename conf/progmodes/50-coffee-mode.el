@@ -25,4 +25,15 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'coffee-mode)
+(add-hook 'coffee-mode-hook
+          '(lambda ()
+             (whitespace-mode 1)
+             (setq coffee-tab-width 2)
+             ))
+
+(eval-after-load "ac-dabbrev"
+  ;; auto-complete-mode
+  '(add-hook 'coffee-mode-hook
+             '(lambda ()
+                (auto-complete-mode 1)
+                (setq ac-sources (append '(ac-source-dabbrev) ac-sources)))))

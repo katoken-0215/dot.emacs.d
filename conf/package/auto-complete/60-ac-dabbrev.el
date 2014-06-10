@@ -25,4 +25,5 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(setq make-backup-files nil)
+(require 'ac-dabbrev)
+(add-to-list 'ac-sources 'ac-source-dabbrev)

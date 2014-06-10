@@ -25,4 +25,5 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'magit)
+(global-set-key (kbd "<f3>") 'highlight-symbol-at-point)
+(global-set-key (kbd "M-<f3>") 'highlight-symbol-remove-all)

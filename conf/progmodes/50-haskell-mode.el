@@ -25,12 +25,11 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'haskell-mode)
+(add-hook 'haskell-mode-hook
+          '(lambda ()
+             (whitespace-mode 1)))
 
-(eval-after-load "haskell-mode"
-  '(progn
-     ;; Indentation
-     (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-     ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-     ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
-     ))
+;; Indentation
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)

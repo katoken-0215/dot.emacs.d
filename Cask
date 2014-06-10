@@ -1,3 +1,5 @@
+;; -*- mode:emacs-lisp -*-
+
 ;;; License
 ;;
 ;; This is free and unencumbered software released into the public domain.
@@ -25,17 +27,65 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(init-loader-load (expand-file-name "~/.emacs.d/conf/package/auto-complete"))
+(source gnu)
+(source melpa)
+(source marmalade)
 
-(require 'auto-complete-config)
+(depends-on "anzu")
+(depends-on "auto-install")
+(depends-on "expand-region")
+(depends-on "highlight-symbol")
+(depends-on "multiple-cursors")
+(depends-on "wgrep")
 
-(setq-default ac-sources '(ac-source-filename ac-source-words-in-same-mode-buffers))
+;; Appearance
+(depends-on "color-theme-tango")
+;; (depends-on "color-theme-solarized")
+(depends-on "rainbow-delimiters")
+(depends-on "popwin")
+(depends-on "yascroll")
 
-(require 'ac-dabbrev)
-(add-to-list 'ac-sources 'ac-source-dabbrev)
+;; Coding
+(depends-on "yasnippet")
+(depends-on "flycheck")
 
-(define-key ac-completing-map (kbd "C-n") 'ac-next)
-(define-key ac-completing-map (kbd "C-p") 'ac-previous)
+;; Git
+(depends-on "magit")
+(depends-on "git-gutter-fringe+")
+(depends-on "git-modes" :git "https://github.com/magit/git-modes.git")
 
-(setq ac-ignore-case nil)
-(setq ac-use-fuzzy t)
+;; File
+(depends-on "open-junk-file")
+(depends-on "recentf-ext")
+
+;; Key
+(depends-on "sequential-command")
+(depends-on "smartrep")
+
+;; auto-complete.el
+(depends-on "auto-complete")
+(depends-on "ac-c-headers")
+(depends-on "ac-dabbrev")
+
+;; helm
+(depends-on "helm")
+(depends-on "helm-git-grep")
+(depends-on "helm-gtags")
+(depends-on "helm-ls-git")
+(depends-on "helm-themes")
+
+;; progmodes
+(depends-on "coffee-mode")
+(depends-on "haskell-mode")
+(depends-on "js2-mode")
+(depends-on "json-mode")
+(depends-on "markdown-mode")
+(depends-on "scala-mode")
+(depends-on "tuareg")
+(depends-on "web-mode")
+(depends-on "yaml-mode")
+
+;;; Ruby
+(depends-on "ruby-mode")
+(depends-on "ruby-block")
+(depends-on "ruby-electric")

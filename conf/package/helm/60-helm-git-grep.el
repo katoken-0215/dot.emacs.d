@@ -25,6 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'helm-git-grep)
-
 (global-set-key (kbd "C-x g g") 'helm-git-grep)

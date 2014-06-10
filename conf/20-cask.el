@@ -25,18 +25,5 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(unless (boundp 'package-user-dir)
-  (setq package-user-dir (expand-file-name "~/.emacs.d/elpa")))
-(package-initialize)
-
-(require 'melpa)
-
-(unless package-archive-contents
-  (package-refresh-contents))
-
-(defmacro package-require-package (package)
-  `(unless (package-installed-p ,package)
-     (package-install ,package)))
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)

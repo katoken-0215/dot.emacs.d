@@ -25,8 +25,3 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'color-theme-tango)
-
-;; No autoload cookie
-(when (< emacs-major-version 24)
-  (require 'color-theme-tango))

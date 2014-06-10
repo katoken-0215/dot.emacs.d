@@ -25,5 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(when (>= emacs-major-version 24)
-  (load-theme 'tango-dark))
+(load-theme 'tango-dark)

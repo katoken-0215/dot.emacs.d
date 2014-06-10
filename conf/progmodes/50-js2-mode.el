@@ -25,8 +25,6 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'js2-mode)
-
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 (add-hook 'js2-mode-hook

@@ -25,7 +25,5 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'recentf-ext)
-
 ;; No autoload cookie
 (require 'recentf-ext)

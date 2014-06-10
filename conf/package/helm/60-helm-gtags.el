@@ -25,17 +25,9 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'git-gutter)
-
-(global-set-key (kbd "C-x g v") 'git-gutter:toggle)
-(global-set-key (kbd "C-x v =") 'git-gutter:popup-hunk)
-
-;; Jump to next/previous hunk
-(global-set-key (kbd "C-x p") 'git-gutter:previous-hunk)
-(global-set-key (kbd "C-x n") 'git-gutter:next-hunk)
-
-;; Stage current hunk
-(global-set-key (kbd "C-x v s") 'git-gutter:stage-hunk)
-
-;; Revert current hunk
-(global-set-key (kbd "C-x v r") 'git-gutter:revert-hunk)
+(eval-after-load "helm-gtags"
+  '(progn
+     (define-key helm-gtags-mode-map (kbd "M-t") 'helm-gtags-find-tag)
+     (define-key helm-gtags-mode-map (kbd "M-r") 'helm-gtags-find-rtag)
+     (define-key helm-gtags-mode-map (kbd "M-s") 'helm-gtags-find-symbol)
+     (define-key helm-gtags-mode-map (kbd "C-t") 'helm-gtags-pop-stack)))

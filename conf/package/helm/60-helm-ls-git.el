@@ -25,6 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'helm-ls-git)
-
 (global-set-key (kbd "C-x g f") 'helm-ls-git-ls)

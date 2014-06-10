@@ -25,8 +25,6 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'auto-install)
-
 ;; No autoload cookie
 (require 'auto-install)
 (setq auto-install-directory (expand-file-name "~/.emacs.d/lisp/"))

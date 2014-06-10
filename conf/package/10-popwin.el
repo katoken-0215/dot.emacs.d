@@ -25,8 +25,6 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'popwin)
-
 (require 'popwin)
 (popwin-mode 1)
 
@@ -36,7 +34,8 @@
 
 ;; (:regexp :width :height :position :noselect :dedicated :stick :tail)
 (push '(compilation-mode :noselect t :tail t) popwin:special-display-config)
+(push '(diff-mode :height 40 :tail nil :stick t) popwin:special-display-config)
 
-(setq popwin:close-popup-window-timer-interval 0.05)
+(setq popwin:close-popup-window-timer-interval 1.0)
 
 (define-key global-map (kbd "C-x p") 'popwin:display-last-buffer)

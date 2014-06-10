@@ -25,5 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'yasnippet)
 (yas-global-mode 1)

@@ -34,6 +34,11 @@
              (setq tab-width 2)
              ))
 
+(add-hook 'emacs-lisp-mode-hook
+          '(lambda ()
+             (ac-emacs-lisp-mode-setup)
+             (auto-complete-mode 1)))
+
 ;; Setup auto-insert for .el
 (define-auto-insert "\\.el"
   (lambda ()

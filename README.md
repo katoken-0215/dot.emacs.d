@@ -27,19 +27,19 @@ helm
 
 * `C-x g f` `helm-ls-git-ls`
 
-git-gutter
-----------
+git-gutter-fringe+
+------------------
 
-* `C-x g v` `git-gutter:toggle`
+* `C-x G` `global-git-gutter+-mode`
 * `C-x v =` `git-gutter:popup-hunk`
 
-* `C-x p` `git-gutter:previous-hunk`
+* `C-x v =` `git-gutter+-show-hunk`
+* `C-x v u` `git-gutter+-revert-hunks`
 
-* `C-x n` `git-gutter:next-hunk`
+magit
+-----
 
-* `C-x v s` `git-gutter:stage-hunk`
-
-* `C-x v r` `git-gutter:revert-hunk`
+* `C-x g m` `magit-status`
 
 yasnippet
 ---------
@@ -47,3 +47,16 @@ yasnippet
 * `C-c & C-n` `yas-new-snippet`
 * `C-c & C-s` `yas-insert-snippet`
 * `C-c & C-v` `yas-visit-snippet-file`
+
+expand-region
+-------------
+
+* `C-,` `er/expand-region`
+* `C-M-,` `er/contract-region`
+
+anzu
+----
+
+* `C-c r` `anzu-query-replace`
+* `C-c R` `anzu-query-replace-regexp`
+* `C-c s` `anzu-query-replace-at-cursor-thing`

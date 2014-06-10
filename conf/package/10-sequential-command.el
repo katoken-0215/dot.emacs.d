@@ -25,8 +25,6 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'sequential-command)
-
 ;; No autoload cookie
 (require 'sequential-command-config)
 (sequential-command-setup-keys)

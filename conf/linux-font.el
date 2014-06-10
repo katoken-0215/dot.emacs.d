@@ -25,5 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(when (< emacs-major-version 24)
-  (init-loader-load (expand-file-name "~/.emacs.d/conf/compat23")))
+(add-to-list 'default-frame-alist '(font . "TakaoGothic-10"))

@@ -31,6 +31,7 @@
 (line-number-mode 1)
 (column-number-mode 1)
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 (setq display-time-24hr-format t)
 (setq display-time-string-forms '(24-hours ":" minutes))
 (display-time)
@@ -39,3 +40,5 @@
 (setq tab-width 4)
 (setq indent-tabs-mode nil)
 (setq which-func-mode t)
+(setq make-backup-files nil)
+(setenv "LANG" "C")

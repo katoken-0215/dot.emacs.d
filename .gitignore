@@ -3,6 +3,8 @@
 session.*
 *.dat
 *.swp
+abbrev_defs
 
 url
-elpa
+elpa/
+.cask/

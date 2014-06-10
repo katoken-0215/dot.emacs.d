@@ -25,8 +25,6 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(package-require-package 'scala-mode)
-
 (add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
 
 (eval-after-load "scala-mode"
