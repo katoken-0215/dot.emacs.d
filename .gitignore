@@ -1,0 +1,8 @@
+*.elc
+*~
+session.*
+*.dat
+*.swp
+
+url
+elpa

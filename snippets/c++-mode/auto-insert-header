@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: auto-insert-header
+# key: auto-insert-header
+# --
+/*
+ * `(file-name-nondirectory (buffer-file-name))`
+ *
+ */
+
+#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#define $1
+
+$0
+
+#endif /* $1 */
