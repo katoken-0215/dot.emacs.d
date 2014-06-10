@@ -31,6 +31,7 @@
 (require 'helm-files)
 
 (setq helm-ff-auto-update-initial-value nil)
+(setq helm-ff-transformer-show-only-basename nil)
 
 (defvar helm-find-files-other-frame-map
   (let ((map (make-sparse-keymap)))
