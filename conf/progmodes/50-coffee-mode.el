@@ -29,4 +29,6 @@
 
 (add-hook 'coffee-mode-hook
           '(lambda ()
-             (whitespace-mode 1)))
+             (whitespace-mode 1)
+             (setq coffee-tab-width 2)
+             ))
