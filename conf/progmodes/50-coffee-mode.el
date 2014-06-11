@@ -26,3 +26,7 @@
 ;; For more information, please refer to [http://unlicense.org]
 
 (package-require-package 'coffee-mode)
+
+(add-hook 'coffee-mode-hook
+          '(lambda ()
+             (whitespace-mode 1)))
