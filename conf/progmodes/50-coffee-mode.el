@@ -38,5 +38,4 @@
   '(add-hook 'coffee-mode-hook
              '(lambda ()
                 (auto-complete-mode 1)
-                (ac-source-dabbrev)
                 (setq ac-sources (append '(ac-source-dabbrev) ac-sources)))))
