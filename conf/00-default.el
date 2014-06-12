@@ -39,3 +39,5 @@
 (setq tab-width 4)
 (setq indent-tabs-mode nil)
 (setq which-func-mode t)
+
+(transient-mark-mode t)
