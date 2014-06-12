@@ -47,3 +47,9 @@ yasnippet
 * `C-c & C-n` `yas-new-snippet`
 * `C-c & C-s` `yas-insert-snippet`
 * `C-c & C-v` `yas-visit-snippet-file`
+
+expand-region
+-------------
+
+* `C-,` `er/expand-region`
+* `C-M-,` `er/contract-region`
