@@ -54,6 +54,7 @@
 
 (add-hook 'c++-mode-hook
           '(lambda ()
+             (ac-cc-mode-setup)
              (auto-complete-mode 1)))
 
 ;; Setup auto-insert for .h
