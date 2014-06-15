@@ -59,3 +59,4 @@ anzu
 
 * `C-c r` `anzu-query-replace`
 * `C-c R` `anzu-query-replace-regexp`
+* `C-c s` `anzu-query-replace-at-cursor-thing`
