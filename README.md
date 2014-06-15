@@ -53,3 +53,9 @@ expand-region
 
 * `C-,` `er/expand-region`
 * `C-M-,` `er/contract-region`
+
+anzu
+----
+
+* `C-c r` `anzu-query-replace`
+* `C-c R` `anzu-query-replace-regexp`
