@@ -42,3 +42,7 @@
           '(lambda ()
              (global-set-key [S-f5] 'compile)
              (global-set-key [f5] 'recompile)))
+
+(add-hook 'c-mode-hook
+          '(lambda ()
+             (auto-complete-mode 1)))
