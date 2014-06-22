@@ -27,10 +27,11 @@
 
 (package-require-package 'haskell-mode)
 
-(eval-after-load "haskell-mode"
-  '(progn
-     ;; Indentation
-     (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-     ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-     ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
-     ))
+(add-hook 'haskell-mode-hook
+          '(lambda ()
+             (whitespace-mode 1)))
+
+;; Indentation
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
