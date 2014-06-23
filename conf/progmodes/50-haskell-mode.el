@@ -33,3 +33,14 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+
+;; flycheck
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook 'flycheck-haskell-setup))
+
+(add-hook 'haskell-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'haskell-hlint)
+             (setq flycheck-disabled-checkers '(haskell-ghc))
+             (flycheck-mode)))
