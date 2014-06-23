@@ -37,6 +37,7 @@
 (depends-on "highlight-symbol")
 (depends-on "multiple-cursors")
 (depends-on "wgrep")
+(depends-on "exec-path-from-shell")
 
 ;; Appearance
 (depends-on "color-theme-tango")
