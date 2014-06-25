@@ -54,3 +54,9 @@
             '(lambda ()
                (auto-complete-mode 1)
                (setq ac-sources (append '(ac-source-dabbrev) ac-sources)))))
+
+;; flycheck
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'ruby-rubocop)
+             (flycheck-mode 1)))
