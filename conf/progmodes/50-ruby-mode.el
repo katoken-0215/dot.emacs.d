@@ -47,7 +47,14 @@
        (ruby-block-mode t))
      (add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)))
 
-;;; ruby-electric
+;; Electric
+(require 'ruby-end)
+(eval-after-load "ruby-mode"
+  '(progn
+     (electric-pair-mode t)
+     (electric-indent-mode t)
+     (electric-layout-mode t)))
+
 ;;; auto-complete
 (eval-after-load "ac-dabbrev"
   '(add-hook 'ruby-mode-hook
