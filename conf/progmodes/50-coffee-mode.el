@@ -37,3 +37,9 @@
              '(lambda ()
                 (auto-complete-mode 1)
                 (setq ac-sources (append '(ac-source-dabbrev) ac-sources)))))
+
+;; flycheck
+(add-hook 'coffee-mode-hook
+          `(lambda ()
+             (setq flycheck-checker 'coffee)
+             (flycheck-mode 1)))
