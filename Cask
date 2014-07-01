@@ -65,7 +65,6 @@
 
 ;; auto-complete.el
 (depends-on "auto-complete")
-(depends-on "ac-c-headers")
 (depends-on "ac-dabbrev")
 
 ;; helm
