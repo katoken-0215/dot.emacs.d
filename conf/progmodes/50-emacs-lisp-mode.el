@@ -39,6 +39,9 @@
              (ac-emacs-lisp-mode-setup)
              (auto-complete-mode 1)))
 
+(add-hook 'emacs-lisp-mode-hook
+          '(lambda () (highlight-symbol-mode 1)))
+
 ;; Setup auto-insert for .el
 (define-auto-insert "\\.el"
   (lambda ()
