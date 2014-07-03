@@ -29,6 +29,7 @@
           '(lambda ()
              (whitespace-mode 1)
              (setq coffee-tab-width 2)
+             (highlight-symbol-mode 1)
              ))
 
 (eval-after-load "ac-dabbrev"

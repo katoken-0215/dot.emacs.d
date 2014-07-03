@@ -33,6 +33,7 @@
              (setq tab-width 4)
              (setq tab-always-indent t)
              (whitespace-mode 1)
+             (highlight-symbol-mode 1)
              ))
 
 ;; Compile

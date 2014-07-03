@@ -34,4 +34,5 @@
              (setq tab-always-indent t)
              (show-paren-mode 1)
              (whitespace-mode 1)
+             (highlight-symbol-mode 1)
              ))

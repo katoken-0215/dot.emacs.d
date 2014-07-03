@@ -32,4 +32,6 @@
              '(lambda ()
                 (setq indent-tabs-mode nil)
                 (setq tab-width 2)
-                (whitespace-mode 1))))
+                (whitespace-mode 1)
+                (highlight-symbol-mode 1)
+                )))

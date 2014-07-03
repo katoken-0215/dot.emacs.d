@@ -34,7 +34,9 @@
 
 (add-hook 'ruby-mode-hook
           '(lambda ()
-             (whitespace-mode 1)))
+             (whitespace-mode 1)
+             (highlight-symbol-mode 1)
+             ))
 
 ;;; ruby-block
 (eval-after-load "ruby-mode"
