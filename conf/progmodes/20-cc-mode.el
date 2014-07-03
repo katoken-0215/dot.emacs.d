@@ -25,9 +25,30 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(add-to-list 'auto-mode-alist '("\\.cl$" . c-mode)) ; For OpenCL
+
 (add-hook 'c-mode-common-hook
           '(lambda ()
-             (c-set-offset 'inextern-lang 0)
-             (c-set-offset 'case-label 0)
+             (setq indent-tabs-mode nil)
+             (setq c-basic-offset 4)
+             (setq tab-width 4)
+             (setq tab-always-indent t)
+             (whitespace-mode 1)
              ))
+
+;; Compile
+(add-hook 'c-mode-common-hook
+          '(lambda ()
+             (global-set-key [S-f5] 'compile)
+             (global-set-key [f5] 'recompile)
+             ))
+
+;; auto-complete
+(add-hook 'c-mode-common-hook
+          '(lambda ()
+             (ac-cc-mode-setup)
+             (auto-complete-mode 1)))
+
+;; gtags
+(add-hook 'c-mode-common-hook
+          '(lambda ()
+             (helm-gtags-mode 1)))

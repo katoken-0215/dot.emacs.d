@@ -36,30 +36,10 @@
              (c-set-offset 'innamespace 0)
              (c-set-offset 'inextern-lang 0)
              (c-set-offset 'case-label 0)
-             (setq indent-tabs-mode nil)
-             (setq c-basic-offset 4)
-             (setq tab-width 4)
-             (setq tab-always-indent t)
-             (show-paren-mode 1)
-             (whitespace-mode 1)
              ))
 
 (defvar c++-command "c++"
   "command to compile")
-
-(add-hook 'c++-mode-hook
-          '(lambda ()
-             (global-set-key [S-f5] 'compile)
-             (global-set-key [f5] 'recompile)))
-
-(add-hook 'c++-mode-hook
-          '(lambda ()
-             (ac-cc-mode-setup)
-             (auto-complete-mode 1)))
-
-(add-hook 'c++-mode-hook
-          '(lambda ()
-             (helm-gtags-mode 1)))
 
 ;; Setup auto-insert for .h
 (define-auto-insert "\\.h$"
