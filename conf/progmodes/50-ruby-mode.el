@@ -51,9 +51,7 @@
 (require 'ruby-end)
 (eval-after-load "ruby-mode"
   '(progn
-     (electric-pair-mode t)
-     (electric-indent-mode t)
-     (electric-layout-mode t)))
+     ))
 
 ;;; auto-complete
 (eval-after-load "ac-dabbrev"

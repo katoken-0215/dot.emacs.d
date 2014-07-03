@@ -25,13 +25,14 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(set-language-environment "Japanese")
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(setq display-time-24hr-format t)
-(setq display-time-string-forms '(24-hours ":" minutes))
-(display-time)
-(setq gc-cons-threshold (* 20 gc-cons-threshold))
-(setq history-length 100)
-(setq make-backup-files nil)
-(setenv "LANG" "C")
+(global-font-lock-mode 1)
+(show-paren-mode 1)
+(line-number-mode 1)
+(column-number-mode 1)
+(electric-pair-mode t)
+(electric-indent-mode t)
+(electric-layout-mode t)
+
+(setq tab-width 4)
+(setq indent-tabs-mode nil)
+(setq which-func-mode t)
