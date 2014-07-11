@@ -25,3 +25,11 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(require 'web-mode)
+
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+(add-hook 'web-mode-hook
+          '(lambda ()
+             (whitespace-mode 1)
+             ))
