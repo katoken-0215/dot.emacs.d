@@ -36,3 +36,9 @@
              (whitespace-mode 1)
              (highlight-symbol-mode 1)
              ))
+
+(add-hook 'js2-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'javascript-jshint)
+             (flycheck-mode 1)
+             ))
