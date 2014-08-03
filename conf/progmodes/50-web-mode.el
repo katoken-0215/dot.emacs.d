@@ -32,4 +32,5 @@
 (add-hook 'web-mode-hook
           '(lambda ()
              (whitespace-mode 1)
+             (setq indent-tabs-mode nil)
              ))
