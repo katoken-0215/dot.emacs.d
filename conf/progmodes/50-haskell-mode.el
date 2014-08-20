@@ -25,20 +25,16 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(require 'haskell-mode)
+
 (add-hook 'haskell-mode-hook
           '(lambda ()
              (whitespace-mode 1)))
 
 ;; Indentation
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
-
+(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 
 ;; flycheck
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook 'flycheck-haskell-setup))
-
 (add-hook 'haskell-mode-hook
           '(lambda ()
              (setq flycheck-checker 'haskell-hlint)
@@ -49,3 +45,6 @@
 (add-hook 'haskell-mode-hook
           '(lambda ()
              (auto-complete-mode 1)))
+
+(eval-after-load "which-func"
+  '(add-to-list 'which-func-modes 'haskell-mode))
