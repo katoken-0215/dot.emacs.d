@@ -32,7 +32,7 @@
              (whitespace-mode 1)))
 
 ;; Indentation
-(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
 ;; flycheck
 (add-hook 'haskell-mode-hook
