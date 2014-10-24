@@ -25,4 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(define-key global-map [?¥] [?\\])  ;
+(define-key global-map [165] [92])
