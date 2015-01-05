@@ -30,13 +30,23 @@
 (add-hook 'js2-mode-hook
           '(lambda ()
              (setq indent-tabs-mode nil)
-             (setq tab-width 4)
+             (setq tab-width 2)
+             (setq js2-basic-offset 2)
+             (setq-default js2-basic-offset 2)
              (setq tab-always-indent t)
              (show-paren-mode 1)
              (whitespace-mode 1)
              (highlight-symbol-mode 1)
              ))
 
+;; auto-complete
+(add-hook 'js2-mode-hook
+          '(lambda ()
+             (auto-complete-mode 1)
+             (setq ac-sources (append '(ac-source-dabbrev) ac-sources))
+             ))
+
+;; flycheck
 (add-hook 'js2-mode-hook
           '(lambda ()
              (setq flycheck-checker 'javascript-jshint)
