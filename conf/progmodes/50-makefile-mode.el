@@ -29,3 +29,8 @@
           '(lambda ()
              (setq indent-tabs-mode t)
              (whitespace-mode 1)))
+
+;; rainbow-delimiters
+(add-hook 'makefile-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))

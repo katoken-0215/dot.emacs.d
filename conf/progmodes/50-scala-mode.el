@@ -35,3 +35,8 @@
                 (whitespace-mode 1)
                 (highlight-symbol-mode 1)
                 )))
+
+;; rainbow-delimiters
+(add-hook 'scala-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))

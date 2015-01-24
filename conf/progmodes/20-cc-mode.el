@@ -53,3 +53,8 @@
 (add-hook 'c-mode-common-hook
           '(lambda ()
              (helm-gtags-mode 1)))
+
+;; rainbow-delimiters
+(add-hook 'c-mode-common-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))

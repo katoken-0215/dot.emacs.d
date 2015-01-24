@@ -44,3 +44,8 @@
           `(lambda ()
              (setq flycheck-checker 'coffee)
              (flycheck-mode 1)))
+
+;; rainbow-delimiters
+(add-hook 'coffee-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))

@@ -54,3 +54,8 @@
              (setq flycheck-checker 'javascript-jshint)
              (flycheck-mode 1)
              ))
+
+;; rainbow-delimiters
+(add-hook 'js2-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))

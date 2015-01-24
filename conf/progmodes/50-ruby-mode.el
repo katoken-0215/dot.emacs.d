@@ -67,3 +67,8 @@
           '(lambda ()
              (setq flycheck-checker 'ruby-rubocop)
              (flycheck-mode 1)))
+
+;; rainbow-delimiters
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))

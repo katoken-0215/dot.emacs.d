@@ -33,3 +33,8 @@
           '(lambda ()
              (setq tab-width 2)
              (whitespace-mode 1)))
+
+;; rainbow-delimiters
+(add-hook 'gfm-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))
