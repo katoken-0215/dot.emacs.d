@@ -39,6 +39,7 @@
              (show-paren-mode 1)
              (whitespace-mode 1)
              (highlight-symbol-mode 1)
+             (electric-layout-mode -1)
              ))
 
 ;; auto-complete
