@@ -47,6 +47,7 @@
 (depends-on "rainbow-delimiters")
 (depends-on "popwin")
 (depends-on "yascroll")
+(depends-on "stripe-buffer")
 
 ;; Coding
 (depends-on "yasnippet")
