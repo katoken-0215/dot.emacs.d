@@ -53,3 +53,6 @@
     (yas-minor-mode 1)
     (insert "auto-insert-unlicense")
     (yas-expand)))
+
+;; auto-complete
+(add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)
