@@ -51,6 +51,7 @@
 ;; Coding
 (depends-on "yasnippet")
 (depends-on "flycheck")
+(depends-on "comment-dwim-2")
 
 ;; Git
 (depends-on "magit")
