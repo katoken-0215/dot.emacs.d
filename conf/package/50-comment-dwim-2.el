@@ -26,3 +26,4 @@
 ;; For more information, please refer to [http://unlicense.org]
 
 (global-set-key (kbd "M-;") 'comment-dwim-2)
+(setq comment-dwim-2--inline-comment-behavior 'reindent-comment)
