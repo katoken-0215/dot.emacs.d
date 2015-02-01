@@ -48,6 +48,7 @@
 (depends-on "popwin")
 (depends-on "yascroll")
 (depends-on "stripe-buffer")
+(depends-on "smart-mode-line")
 
 ;; Coding
 (depends-on "yasnippet")
