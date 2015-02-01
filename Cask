@@ -78,6 +78,7 @@
 (depends-on "helm-gtags")
 (depends-on "helm-git-files")
 (depends-on "helm-themes")
+(depends-on "helm-descbinds")
 
 ;; progmodes
 (depends-on "coffee-mode")
