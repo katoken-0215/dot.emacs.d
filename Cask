@@ -60,6 +60,7 @@
 (depends-on "git-modes" :git "https://github.com/magit/git-modes.git")
 
 ;; File
+(depends-on "dired-k")
 (depends-on "open-junk-file")
 (depends-on "recentf-ext")
 
