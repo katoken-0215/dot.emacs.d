@@ -23,9 +23,9 @@ helm
 
 * `C-x g g` `helm-git-grep`
 
-### helm-ls-git
+### helm-git-files
 
-* `C-x g f` `helm-ls-git-ls`
+* `C-x g f` `helm-git-files`
 
 git-gutter-fringe+
 ------------------
