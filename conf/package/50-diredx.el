@@ -25,12 +25,7 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(require 'dired-k)
 
-(define-key dired-mode-map (kbd "g") 'dired-k)
-(add-hook 'dired-initial-position-hook 'dired-k)
-(add-hook 'dired-mode-hook 'dired-k)
+(require 'direx)
 
-(require 'direx-k)
-(global-set-key (kbd "C-\\") 'direx-project:jump-to-project-root-other-window)
-(define-key direx:direx-mode-map (kbd "g") 'direx-k)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)

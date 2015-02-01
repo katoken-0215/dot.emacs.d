@@ -61,6 +61,7 @@
 
 ;; File
 (depends-on "dired-k")
+(depends-on "direx")
 (depends-on "open-junk-file")
 (depends-on "recentf-ext")
 
