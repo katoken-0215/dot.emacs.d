@@ -46,7 +46,7 @@
 (add-hook 'js2-mode-hook
           '(lambda ()
              (auto-complete-mode 1)
-             (setq ac-sources (append '(ac-source-dabbrev) ac-sources))
+             (setq ac-sources (append '(ac-source-dabbrev ac-source-yasnippet) ac-sources))
              ))
 
 ;; flycheck
