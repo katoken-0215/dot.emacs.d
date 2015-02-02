@@ -85,13 +85,16 @@
 ;; progmodes
 (depends-on "coffee-mode")
 (depends-on "haskell-mode")
-(depends-on "js2-mode")
 (depends-on "json-mode")
 (depends-on "markdown-mode")
 (depends-on "scala-mode")
 (depends-on "tuareg")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
+
+;; JavaScript
+(depends-on "js2-mode")
+(depends-on "js-doc")
 
 ;;; Ruby
 (depends-on "ruby-mode")
