@@ -32,5 +32,5 @@
 (add-hook 'dired-mode-hook 'dired-k)
 
 (require 'direx-k)
-(global-set-key (kbd "C-\\") 'direx-project:jump-to-project-root-other-window)
+(global-set-key (kbd "C-o") 'direx-project:jump-to-project-root-other-window)
 (define-key direx:direx-mode-map (kbd "g") 'direx-k)
