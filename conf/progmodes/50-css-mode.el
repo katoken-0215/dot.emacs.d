@@ -25,13 +25,13 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(require 'web-mode)
+(autoload 'css-mode "css-mode")
+(setq auto-mode-alist
+      (cons '("\\.css\\'" . css-mode) auto-mode-alist))
 
-(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-
-(add-hook 'web-mode-hook
-          '(lambda ()
-             (whitespace-mode 1)
-             (highlight-symbol-mode 1)
-             (setq indent-tabs-mode nil)
-             ))
+(add-hook 'css-mode-hook
+          (lambda ()
+            (whitespace-mode 1)
+            (highlight-symbol-mode 1)
+            (setq css-indent-offset 2)
+            ))
