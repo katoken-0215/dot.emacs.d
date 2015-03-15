@@ -87,6 +87,7 @@
 (depends-on "haskell-mode")
 (depends-on "jade-mode")
 (depends-on "json-mode")
+(depends-on "haml-mode")
 (depends-on "markdown-mode")
 (depends-on "scala-mode")
 (depends-on "tuareg")
