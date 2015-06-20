@@ -84,6 +84,7 @@
 
 ;; progmodes
 (depends-on "coffee-mode")
+(depends-on "go-mode")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
 (depends-on "jade-mode")
