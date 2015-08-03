@@ -64,4 +64,6 @@
 ;; js-doc
 (require 'js-doc)
 
-(define-key js2-mode-map (kbd "C-c i") 'js-doc-insert-function-doc)
+(add-hook 'js2-mode-hook
+          '(lambda ()
+             (define-key js2-mode-map (kbd "C-c i") 'js-doc-insert-function-doc)))
