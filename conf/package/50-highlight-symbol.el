@@ -27,3 +27,4 @@
 
 (global-set-key (kbd "<f3>") 'highlight-symbol-at-point)
 (global-set-key (kbd "M-<f3>") 'highlight-symbol-remove-all)
+(setq highlight-symbol-idle-delay 0)
