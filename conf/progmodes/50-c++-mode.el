@@ -47,3 +47,10 @@
     (yas-minor-mode 1)
     (insert "auto-insert-header")
     (yas-expand)))
+
+;; Setup auto-insert for .cpp
+(define-auto-insert "\\.cpp$"
+  (lambda ()
+    (yas-minor-mode 1)
+    (insert "auto-insert-cpp-body")
+    (yas-expand)))

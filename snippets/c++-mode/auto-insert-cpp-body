@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: auto-insert-cpp-body
+# key: auto-insert-cpp-body
+# --
+/*
+ * `(file-name-nondirectory (buffer-file-name))`
+ *
+ */
+
+$0
