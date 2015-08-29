@@ -27,4 +27,4 @@
 
 (require 'hiwin)
 (hiwin-activate)
-(set-face-background 'hiwin-face "#555753") ;tango color
+(set-face-background 'hiwin-face "#000000") ;tango color
