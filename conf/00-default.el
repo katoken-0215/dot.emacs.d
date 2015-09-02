@@ -32,6 +32,10 @@
 (setq display-time-string-forms '(24-hours ":" minutes))
 (display-time)
 (setq gc-cons-threshold (* 20 gc-cons-threshold))
-(setq history-length 100)
+(setq history-length 10000)
+
 (setq make-backup-files nil)
+(setq backup-inhibited t)
+(setq delete-auto-save-files t)
+
 (setenv "LANG" "C")
