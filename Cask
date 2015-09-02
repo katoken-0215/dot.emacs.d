@@ -73,6 +73,7 @@
 ;; auto-complete.el
 (depends-on "auto-complete")
 (depends-on "ac-dabbrev")
+(depends-on "ac-js2")
 
 ;; helm
 (depends-on "helm")
