@@ -39,3 +39,5 @@
 (setq delete-auto-save-files t)
 
 (setenv "LANG" "C")
+
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/mozc")
