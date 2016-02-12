@@ -79,7 +79,7 @@
 (depends-on "helm")
 (depends-on "helm-git-grep")
 (depends-on "helm-gtags")
-(depends-on "helm-git-files")
+(depends-on "helm-ls-git")
 (depends-on "helm-themes")
 (depends-on "helm-descbinds")
 

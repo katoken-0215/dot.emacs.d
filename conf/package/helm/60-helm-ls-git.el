@@ -25,4 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(global-set-key (kbd "C-x g f") 'helm-git-files)
+(global-set-key (kbd "C-x g f") 'helm-ls-git-ls)
