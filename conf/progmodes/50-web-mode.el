@@ -34,4 +34,5 @@
              (whitespace-mode 1)
              (highlight-symbol-mode 1)
              (setq indent-tabs-mode nil)
+             (setq web-mode-markup-indent-offset 2)
              ))
