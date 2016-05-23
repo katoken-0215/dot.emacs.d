@@ -26,3 +26,5 @@
 ;; For more information, please refer to [http://unlicense.org]
 
 (global-set-key (kbd "C-x g g") 'helm-git-grep)
+
+(setq helm-git-grep-candidate-number-limit 3000)
