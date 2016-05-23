@@ -48,7 +48,7 @@
              (auto-complete-mode 1)
              (setq ac-sources (append '(ac-source-dabbrev ac-source-yasnippet) ac-sources))
              ))
-(add-hook 'js2-mode-hook 'ac-js2-mode)  ;; ac-js2
+;; (add-hook 'js2-mode-hook 'ac-js2-mode)  ;; ac-js2
 
 ;; flycheck
 (add-hook 'js2-mode-hook
