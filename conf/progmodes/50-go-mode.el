@@ -25,3 +25,7 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(add-hook 'go-mode-hook
+	  '(lambda ()
+	     (setq tab-width 2)
+	     ))
