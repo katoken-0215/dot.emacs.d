@@ -41,3 +41,5 @@
 (eval-after-load "popwin"
   '(progn
      (push '("^\*helm .+\*$" :height 30 :regexp t) popwin:special-display-config)))
+
+(setq helm-candidate-number-limit 3000)
