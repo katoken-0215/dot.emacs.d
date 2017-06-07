@@ -55,6 +55,10 @@
 (depends-on "flycheck")
 (depends-on "comment-dwim-2")
 
+;; Elixir
+(depends-on "alchemist")
+(depends-on "elixir-mode")
+
 ;; Git
 (depends-on "magit")
 (depends-on "git-gutter-fringe+")
