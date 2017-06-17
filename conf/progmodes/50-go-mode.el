@@ -25,6 +25,9 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(exec-path-from-shell-copy-env "GOROOT")
+(exec-path-from-shell-copy-env "GOPATH")
+
 (add-hook 'go-mode-hook
 	  '(lambda ()
 	     (setq tab-width 2)
