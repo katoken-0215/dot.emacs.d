@@ -43,7 +43,6 @@
 ;; Appearance
 (depends-on "color-theme-tango")
 ;; (depends-on "color-theme-solarized")
-(depends-on "hiwin")
 (depends-on "rainbow-delimiters")
 (depends-on "popwin")
 (depends-on "yascroll")
