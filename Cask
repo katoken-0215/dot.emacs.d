@@ -86,6 +86,7 @@
 
 ;; progmodes
 (depends-on "coffee-mode")
+(depends-on "dockerfile-mode")
 (depends-on "go-mode")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
