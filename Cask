@@ -41,8 +41,6 @@
 (depends-on "exec-path-from-shell")
 
 ;; Appearance
-(depends-on "color-theme-tango")
-;; (depends-on "color-theme-solarized")
 (depends-on "rainbow-delimiters")
 (depends-on "popwin")
 (depends-on "yascroll")
