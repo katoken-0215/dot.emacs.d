@@ -53,7 +53,8 @@
 ;; flycheck
 (add-hook 'js2-mode-hook
           '(lambda ()
-             (setq flycheck-checker 'javascript-jshint)
+             (setq flycheck-disabled-checkers '(javascript-jshint))
+             (setq flycheck-checker 'javascript-eslint)
              (flycheck-mode 1)
              ))
 
