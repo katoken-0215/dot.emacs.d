@@ -25,6 +25,8 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+
 (add-hook 'typescript-mode-hook
           '(lambda ()
              (setq indent-tabs-mode nil)
