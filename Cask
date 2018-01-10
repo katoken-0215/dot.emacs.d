@@ -97,6 +97,7 @@
 (depends-on "markdown-mode")
 (depends-on "scala-mode")
 (depends-on "tuareg")
+(depends-on "typescript-mode")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
 
