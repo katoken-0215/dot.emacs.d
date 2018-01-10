@@ -73,6 +73,7 @@
 ;; Key
 (depends-on "sequential-command")
 (depends-on "smartrep")
+(depends-on "region-bindings-mode")
 
 ;; auto-complete.el
 (depends-on "auto-complete")
