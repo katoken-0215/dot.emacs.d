@@ -30,6 +30,7 @@
              (setq tab-width 2)
              (setq indent-tabs-mode nil)
              (show-paren-mode 1)
+             (whitespace-mode 1)
              (highlight-symbol-mode 1)
              ))
 
