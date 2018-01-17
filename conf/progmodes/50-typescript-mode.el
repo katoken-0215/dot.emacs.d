@@ -35,3 +35,8 @@
              (highlight-symbol-mode 1)
              (electric-layout-mode -1)
              ))
+
+;; rainbow-delimiters
+(add-hook 'typescript-mode-hook
+          '(lambda ()
+             (rainbow-delimiters-mode-enable)))
