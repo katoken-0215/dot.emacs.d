@@ -107,3 +107,11 @@
 (depends-on "ruby-mode")
 (depends-on "ruby-block")
 (depends-on "ruby-end")
+
+;;; Python
+(depends-on "auto-virtualenvwrapper")
+(depends-on "py-autopep8")
+(depends-on "pyenv-mode")
+(depends-on "pyenv-mode-auto")
+(depends-on "virtualenvwrapper")
+(depends-on "py-yapf")

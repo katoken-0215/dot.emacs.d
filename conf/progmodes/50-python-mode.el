@@ -25,6 +25,9 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(require 'virtualenvwrapper)
+(require 'auto-virtualenvwrapper)
+
 (add-hook 'python-mode-hook
           '(lambda ()
              (setq tab-width 2)
@@ -38,3 +41,10 @@
 (add-hook 'python-mode-hook
           '(lambda ()
              (rainbow-delimiters-mode-enable)))
+
+;; FlyCheck
+(add-hook 'python-mode-hook
+          '(lambda ()
+             (auto-virtualenvwrapper-activate)
+             (flycheck-mode 1)
+             ))
