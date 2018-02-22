@@ -37,3 +37,17 @@
 (init-loader-load (expand-file-name "~/.emacs.d/conf"))
 
 (cd "~")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yasnippet yascroll yaml-mode wgrep web-mode typescript-mode tuareg stripe-buffer smartrep smart-mode-line sequential-command scala-mode ruby-end ruby-block region-bindings-mode recentf-ext rainbow-delimiters popwin open-junk-file multiple-cursors markdown-mode magit json-mode js2-mode js-doc jade-mode hiwin highlight-symbol helm-themes helm-ls-git helm-gtags helm-git-grep helm-descbinds haskell-mode haml-mode go-mode git-modes git-gutter-fringe+ flycheck expand-region exec-path-from-shell direx dired-k comment-dwim-2 color-theme-tango coffee-mode auto-install auto-complete anzu all-ext alchemist ac-dabbrev))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

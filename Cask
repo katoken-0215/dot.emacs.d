@@ -100,8 +100,9 @@
 (depends-on "yaml-mode")
 
 ;; JavaScript
-(depends-on "js2-mode")
 (depends-on "js-doc")
+(depends-on "js2-mode")
+(depends-on "prettier-js")
 
 ;;; Ruby
 (depends-on "ruby-mode")

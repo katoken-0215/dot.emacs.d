@@ -38,6 +38,13 @@
              (electric-layout-mode -1)
              ))
 
+;; flycheck
+(add-hook 'typescript-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'typescript-tslint)
+             (flycheck-mode 1)
+             ))
+
 ;; rainbow-delimiters
 (add-hook 'typescript-mode-hook
           '(lambda ()
