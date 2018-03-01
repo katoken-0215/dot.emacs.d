@@ -40,6 +40,7 @@
              (whitespace-mode 1)
              (highlight-symbol-mode 1)
              (electric-layout-mode -1)
+             (prettier-js-mode 1)
              ))
 
 ;; auto-complete
