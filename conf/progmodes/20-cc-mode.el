@@ -43,12 +43,6 @@
              (global-set-key [f5] 'recompile)
              ))
 
-;; auto-complete
-(add-hook 'c-mode-common-hook
-          '(lambda ()
-             (ac-cc-mode-setup)
-             (auto-complete-mode 1)))
-
 ;; gtags
 (add-hook 'c-mode-common-hook
           '(lambda ()

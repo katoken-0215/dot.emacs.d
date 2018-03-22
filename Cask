@@ -72,10 +72,6 @@
 (depends-on "smartrep")
 (depends-on "region-bindings-mode")
 
-;; auto-complete.el
-(depends-on "auto-complete")
-(depends-on "ac-dabbrev")
-
 ;; helm
 (depends-on "helm")
 (depends-on "helm-git-grep")

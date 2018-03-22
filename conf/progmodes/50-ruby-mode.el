@@ -55,13 +55,6 @@
   '(progn
      ))
 
-;;; auto-complete
-(eval-after-load "ac-dabbrev"
-  '(add-hook 'ruby-mode-hook
-            '(lambda ()
-               (auto-complete-mode 1)
-               (setq ac-sources (append '(ac-source-dabbrev) ac-sources)))))
-
 ;; flycheck
 (add-hook 'ruby-mode-hook
           '(lambda ()

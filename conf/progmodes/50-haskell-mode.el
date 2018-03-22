@@ -41,11 +41,6 @@
              (setq flycheck-disabled-checkers '(haskell-ghc))
              (flycheck-mode 1)))
 
-;; auto-complete
-(add-hook 'haskell-mode-hook
-          '(lambda ()
-             (auto-complete-mode 1)))
-
 ;; rainbow-delimiters
 (add-hook 'haskell-mode-hook
           '(lambda ()

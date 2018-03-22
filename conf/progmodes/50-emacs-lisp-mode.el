@@ -35,11 +35,6 @@
              ))
 
 (add-hook 'emacs-lisp-mode-hook
-          '(lambda ()
-             (ac-emacs-lisp-mode-setup)
-             (auto-complete-mode 1)))
-
-(add-hook 'emacs-lisp-mode-hook
           '(lambda () (highlight-symbol-mode 1)))
 
 ;; rainbow-delimiters
@@ -53,6 +48,3 @@
     (yas-minor-mode 1)
     (insert "auto-insert-unlicense")
     (yas-expand)))
-
-;; auto-complete
-(add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)

@@ -48,9 +48,3 @@
                     "\\(?:^\\|\\s-+\\)\\(?:do\\)")
                (set (make-variable-buffer-local 'ruby-end-check-statement-modifiers) nil)
                (ruby-end-mode +1)))
-
-(add-hook 'elixir-mode-hook
-          '(lambda ()
-             (auto-complete-mode 1)
-             (setq ac-sources (append '(ac-source-dabbrev) ac-sources))
-             ))
