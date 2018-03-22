@@ -48,3 +48,7 @@
              (auto-virtualenvwrapper-activate)
              (flycheck-mode 1)
              ))
+
+;; jedi
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)

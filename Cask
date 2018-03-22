@@ -72,6 +72,12 @@
 (depends-on "smartrep")
 (depends-on "region-bindings-mode")
 
+;; company
+(depends-on "company")
+(depends-on "company-jedi")
+(depends-on "company-quickhelp")
+(depends-on "company-statistics")
+
 ;; helm
 (depends-on "helm")
 (depends-on "helm-git-grep")
@@ -107,8 +113,9 @@
 
 ;;; Python
 (depends-on "auto-virtualenvwrapper")
+(depends-on "jedi-core")
 (depends-on "py-autopep8")
+(depends-on "py-yapf")
 (depends-on "pyenv-mode")
 (depends-on "pyenv-mode-auto")
 (depends-on "virtualenvwrapper")
-(depends-on "py-yapf")
