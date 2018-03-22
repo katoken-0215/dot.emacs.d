@@ -32,7 +32,6 @@
 (source marmalade)
 
 (depends-on "anzu")
-(depends-on "auto-install")
 (depends-on "expand-region")
 (depends-on "highlight-symbol")
 (depends-on "multiple-cursors")
