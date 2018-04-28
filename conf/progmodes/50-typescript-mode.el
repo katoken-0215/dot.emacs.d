@@ -49,3 +49,15 @@
 (add-hook 'typescript-mode-hook
           '(lambda ()
              (rainbow-delimiters-mode-enable)))
+
+;; tide
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1))
+
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)

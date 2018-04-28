@@ -96,7 +96,6 @@
 (depends-on "markdown-mode")
 (depends-on "scala-mode")
 (depends-on "tuareg")
-(depends-on "typescript-mode")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
 
@@ -104,6 +103,10 @@
 (depends-on "js-doc")
 (depends-on "js2-mode")
 (depends-on "prettier-js")
+
+;; TypeScript
+(depends-on "tide")
+(depends-on "typescript-mode")
 
 ;;; Ruby
 (depends-on "ruby-mode")
