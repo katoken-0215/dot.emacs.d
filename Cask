@@ -40,6 +40,7 @@
 (depends-on "exec-path-from-shell")
 
 ;; Appearance
+(depends-on "dimmer")
 (depends-on "rainbow-delimiters")
 (depends-on "popwin")
 (depends-on "yascroll")
