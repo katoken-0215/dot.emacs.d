@@ -50,6 +50,7 @@
 (depends-on "yasnippet")
 (depends-on "flycheck")
 (depends-on "comment-dwim-2")
+(depends-on "crux")
 
 ;; Elixir
 (depends-on "alchemist")
