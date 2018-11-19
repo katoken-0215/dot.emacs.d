@@ -38,17 +38,6 @@
              (highlight-symbol-mode 1)
              ))
 
-;;; ruby-block
-(eval-after-load "ruby-mode"
-  '(progn
-     ;; No autoload cookie
-     (autoload 'ruby-block-mode "ruby-block")
-     (eval-after-load "ruby-block"
-       '(setq ruby-block-highlight-toggle t))
-     (defun ruby-mode-hook-ruby-block ()
-       (ruby-block-mode t))
-     (add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)))
-
 ;; Electric
 (require 'ruby-end)
 (eval-after-load "ruby-mode"

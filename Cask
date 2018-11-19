@@ -112,7 +112,6 @@
 
 ;;; Ruby
 (depends-on "ruby-mode")
-(depends-on "ruby-block")
 (depends-on "ruby-end")
 
 ;;; Python
