@@ -8,3 +8,7 @@ abbrev_defs
 url
 elpa/
 .cask/
+
+company-statistics-cache.el
+recentf
+network-security.data
