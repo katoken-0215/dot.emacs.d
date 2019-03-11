@@ -25,21 +25,19 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(require 'helm-config)
-(require 'helm-files)
+(ivy-mode 1)
+(counsel-mode 1)
 
-(setq helm-ff-auto-update-initial-value nil)
-(setq helm-ff-transformer-show-only-basename nil)
+(setq ivy-height 60)
+(setq ivy-re-builders-alist
+      '((t . ivy--regex-fuzzy)))
 
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
-(global-set-key (kbd "M-y") 'helm-show-kill-ring)
-(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "C-x g f") 'counsel-git)
+(global-set-key (kbd "C-x g g") 'counsel-git-grep)
+(global-set-key (kbd "C-x r") 'counsel-recentf)
+(global-set-key (kbd "M-y") 'counsel-yank-pop)
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-(define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)
-
-(eval-after-load "popwin"
-  '(progn
-     (push '("^\*helm .+\*$" :height 30 :regexp t) popwin:special-display-config)))
-
-(setq helm-candidate-number-limit 3000)
+(global-set-key (kbd "C-s") 'swiper)
+(defvar swiper-include-line-number-in-search t) ;; line-numberでも検索可能

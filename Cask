@@ -79,13 +79,8 @@
 (depends-on "company-quickhelp")
 (depends-on "company-statistics")
 
-;; helm
-(depends-on "helm")
-(depends-on "helm-git-grep")
-(depends-on "helm-gtags")
-(depends-on "helm-ls-git")
-(depends-on "helm-themes")
-(depends-on "helm-descbinds")
+;; counsel/ivy
+(depends-on "counsel")
 
 ;; progmodes
 (depends-on "coffee-mode")
