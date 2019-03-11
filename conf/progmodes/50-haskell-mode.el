@@ -45,6 +45,3 @@
 (add-hook 'haskell-mode-hook
           '(lambda ()
              (rainbow-delimiters-mode-enable)))
-
-(eval-after-load "which-func"
-  '(add-to-list 'which-func-modes 'haskell-mode))
