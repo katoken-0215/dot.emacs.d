@@ -39,4 +39,4 @@
 ;; rainbow-delimiters
 (add-hook 'scala-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))

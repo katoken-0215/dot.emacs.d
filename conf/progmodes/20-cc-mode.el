@@ -51,4 +51,4 @@
 ;; rainbow-delimiters
 (add-hook 'c-mode-common-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))

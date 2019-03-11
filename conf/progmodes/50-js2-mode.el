@@ -53,7 +53,7 @@
 ;; rainbow-delimiters
 (add-hook 'js2-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))
 
 ;; js-doc
 (require 'js-doc)

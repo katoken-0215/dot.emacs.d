@@ -41,4 +41,4 @@
 ;; rainbow-delimiters
 (add-hook 'coffee-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))

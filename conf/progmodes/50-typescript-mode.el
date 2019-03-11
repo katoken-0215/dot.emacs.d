@@ -48,7 +48,7 @@
 ;; rainbow-delimiters
 (add-hook 'typescript-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))
 
 ;; tide
 (defun setup-tide-mode ()

@@ -40,7 +40,7 @@
 ;; rainbow-delimiters
 (add-hook 'python-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))
 
 ;; FlyCheck
 (add-hook 'python-mode-hook

@@ -53,4 +53,4 @@
 ;; rainbow-delimiters
 (add-hook 'ruby-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))

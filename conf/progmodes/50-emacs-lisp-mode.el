@@ -38,9 +38,9 @@
           '(lambda () (highlight-symbol-mode 1)))
 
 ;; rainbow-delimiters
-(add-hook 'emacs-lisp-mode
+(add-hook 'emacs-lisp-mode-hook
           '(lambda ()
-             (rainbow-delimiters-mode-enable)))
+             (rainbow-delimiters-mode 1)))
 
 ;; Setup auto-insert for .el
 (define-auto-insert "\\.el"
