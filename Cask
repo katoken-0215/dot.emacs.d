@@ -40,18 +40,22 @@
 (depends-on "exec-path-from-shell")
 
 ;; Appearance
+(depends-on "beacon")
+(depends-on "color-identifiers-mode")
 (depends-on "dimmer")
 (depends-on "rainbow-delimiters")
 (depends-on "popwin")
 (depends-on "yascroll")
 (depends-on "stripe-buffer")
 (depends-on "smart-mode-line")
+(depends-on "volatile-highlights")
 
 ;; Coding
 (depends-on "yasnippet")
-(depends-on "flycheck")
 (depends-on "comment-dwim-2")
 (depends-on "crux")
+(depends-on "smart-hungry-delete")
+(depends-on "dumb-jump")
 
 ;; Elixir
 (depends-on "alchemist")
@@ -75,12 +79,17 @@
 
 ;; company
 (depends-on "company")
+(depends-on "company-box")
 (depends-on "company-jedi")
 (depends-on "company-quickhelp")
 (depends-on "company-statistics")
 
 ;; counsel/ivy
 (depends-on "counsel")
+
+;; flycheck
+(depends-on "flycheck")
+(depends-on "flycheck-popup-tip")
 
 ;; progmodes
 (depends-on "coffee-mode")

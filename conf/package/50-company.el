@@ -71,4 +71,6 @@
 (setq company-selection-wrap-around t) ; 候補の一番下でさらに下に行こうとすると一番上に戻る
 
 
-(company-statistics-mode)
+(company-statistics-mode 1)
+
+(company-box-mode 1)
