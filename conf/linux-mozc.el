@@ -25,6 +25,10 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/mozc")
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/emacs-mozc")
+
 (require 'mozc)
+
 (set-language-environment "Japanese")
 (setq default-input-method "japanese-mozc")
