@@ -25,7 +25,4 @@
 ;; 
 ;; For more information, please refer to [http://unlicense.org]
 
-(require 'smart-hungry-delete)
 (smart-hungry-delete-add-default-hooks)
-(global-set-key (kbd "<backspace>") 'smart-hungry-delete-backward-char)
-(global-set-key (kbd "C-d") 'smart-hungry-delete-forward-char)
