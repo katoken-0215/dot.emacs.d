@@ -30,12 +30,12 @@
 
 (setq ivy-height 60)
 (setq ivy-re-builders-alist
-      '((t . ivy--regex-fuzzy)))
+      '((t . ivy--regex-ignore-order)))
 
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "C-x g f") 'counsel-git)
 (global-set-key (kbd "C-x g g") 'counsel-git-grep)
-(global-set-key (kbd "C-x r") 'counsel-recentf)
+(global-set-key (kbd "C-c r") 'counsel-recentf)
 (global-set-key (kbd "M-y") 'counsel-yank-pop)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
