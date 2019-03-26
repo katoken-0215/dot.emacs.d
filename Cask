@@ -56,6 +56,7 @@
 (depends-on "crux")
 (depends-on "smart-hungry-delete")
 (depends-on "dumb-jump")
+(depends-on "format-all")
 
 ;; Elixir
 (depends-on "alchemist")
