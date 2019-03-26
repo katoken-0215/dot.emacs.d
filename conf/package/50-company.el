@@ -70,6 +70,8 @@
 (setq company-minimum-prefix-length 2) ; デフォルトは4
 (setq company-selection-wrap-around t) ; 候補の一番下でさらに下に行こうとすると一番上に戻る
 
+(setq company-dabbrev-downcase nil)     ; dabbrev バックエンドでは case sensitive にする
+
 
 (company-statistics-mode 1)
 
