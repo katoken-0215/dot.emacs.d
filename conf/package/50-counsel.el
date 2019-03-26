@@ -28,16 +28,16 @@
 (ivy-mode 1)
 (counsel-mode 1)
 
-(setq ivy-height 60)
+(setq ivy-height 20)
 (setq ivy-re-builders-alist
       '((t . ivy--regex-ignore-order)))
 
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "C-x g f") 'counsel-git)
 (global-set-key (kbd "C-x g g") 'counsel-git-grep)
-(global-set-key (kbd "C-c r") 'counsel-recentf)
+(global-set-key (kbd "C-x c r") 'counsel-recentf)
 (global-set-key (kbd "M-y") 'counsel-yank-pop)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-(global-set-key (kbd "C-s") 'swiper)
+(define-key isearch-mode-map (kbd "C-o") 'swiper)
 (defvar swiper-include-line-number-in-search t) ;; line-numberでも検索可能
